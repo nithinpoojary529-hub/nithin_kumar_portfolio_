@@ -407,4 +407,18 @@ document.addEventListener('DOMContentLoaded', () => {
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
+
+  /* ------------------------------------------------------------------------
+     12. Profile Image Fallback Handling
+     ------------------------------------------------------------------------ */
+  const profileImg = document.getElementById('profileImg');
+  if (profileImg) {
+    profileImg.addEventListener('error', function errorHandler() {
+      // If profile.jpg is missing or broken, display an elegant initials avatar placeholder
+      if (this.src.indexOf('data:image/svg+xml') === -1) {
+        this.src = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 250' width='200' height='250'><rect width='200' height='250' fill='%231e293b'/><circle cx='100' cy='95' r='45' fill='%233b82f6'/><path d='M40 210 c0 -35 25 -55 60 -55 s60 20 60 55' fill='%233b82f6'/><text x='100' y='105' font-family='sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'>NK</text></svg>";
+      }
+    });
+  }
+
 });

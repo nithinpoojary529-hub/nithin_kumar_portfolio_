@@ -2208,8 +2208,30 @@ ul {
 
 /* Printable Resume Styling inside modal */
 .printable-resume .resume-header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 24px;
   margin-bottom: 20px;
+  text-align: left;
+}
+
+.printable-resume .resume-photo-wrap {
+  flex-shrink: 0;
+}
+
+.printable-resume .resume-photo {
+  width: 95px;
+  height: 115px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  display: block;
+}
+
+.printable-resume .resume-header-info {
+  flex: 1;
 }
 
 .printable-resume .resume-header h2 {
@@ -2502,6 +2524,12 @@ ul {
   .modal-footer {
     padding: 16px;
   }
+
+  .printable-resume .resume-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -2512,6 +2540,23 @@ ul {
     background: #ffffff !important;
     color: #000000 !important;
     font-size: 11pt;
+  }
+
+  .printable-resume .resume-header {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 20px !important;
+    text-align: left !important;
+    margin-bottom: 16px !important;
+  }
+
+  .printable-resume .resume-photo {
+    width: 80px !important;
+    height: 100px !important;
+    border: 1px solid #333333 !important;
+    border-radius: 4px !important;
+    display: block !important;
   }
 
   .site-header,

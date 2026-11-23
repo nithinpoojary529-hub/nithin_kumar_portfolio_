@@ -36,7 +36,7 @@ e:\nithin_kumar_portfolio\
 ├── index.html        # Complete semantic structure & content
 ├── style.css         # Modern design system, responsive styles, light/dark themes
 ├── script.js         # Interactive features, theme toggle, copy buttons, modal
-├── profile.jpg       # Profile photograph (place your photo here)
+├── nithin_kumar.jpeg # Profile photograph
 └── README.md         # Documentation & deployment guide
 ```
 
@@ -54,14 +54,9 @@ You can view the portfolio immediately in any web browser:
 
 ---
 
-## 🖼️ Profile Photo Setup
+## 🖼️ Profile Photo
 
-The HTML file directly expects your photo as **`profile.jpg`** in the root directory:
-`e:\nithin_kumar_portfolio\profile.jpg`
-
-You can simply copy your photo into `e:\nithin_kumar_portfolio\` and name it **`profile.jpg`**.
-(The uploaded photo from chat is stored on your PC at:  
-`C:\Users\Nithinkumar\.gemini\antigravity\brain\f86803ce-fc83-4787-b6f3-acc2a0d276f2\.user_uploaded\media_1793717078584_23d42cb4.jpg`)
+The website uses **`./nithin_kumar.jpeg`** directly in both the hero showcase and the interactive resume overview modal.
 
 ---
 
